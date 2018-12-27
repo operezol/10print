@@ -3,7 +3,7 @@ html {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     overflow: auto;
 }
 
@@ -16,8 +16,8 @@ html {
 }
 
 #maze div {
-    width: 5vw;
-    height: 5vw;
+    width: 2vw;
+    height: 2vw;
 }
 
 #maze div.cross {
@@ -29,23 +29,25 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 1vw;
-    height: 13vw;
+    width: 150%;
+    height: 10%;
     background-color: black;
     content: "";
     display: block;
     transform-origin: 50% 50%;
-    transform: rotate(45deg) translateX(-5vw) translateY(-4vw);
-    -webkit-transform: rotate(45deg) translateX(-5vw) translateY(-4vw);
-    -moz-transform: rotate(45deg) translateX(-5vw) translateY(-4vw);
-    -ms-transform: rotate(45deg) translateX(-5vw) translateY(-4vw);
-    -o-transform: rotate(45deg) translateX(-5vw) translateY(-4vw);
+    transform: rotate(45deg) translateX(-35%) translateY(500%);
+    -webkit-transform: rotate(45deg) translateX(-35%) translateY(500%);
+    -moz-transform: rotate(45deg) translateX(-35%) translateY(500%);
+    -ms-transform: rotate(45deg) translateX(-35%) translateY(500%);
+    -o-transform: rotate(45deg) translateX(-35%) translateY(500%);
+    box-shadow: -2px -2px 2px 2px rgba(0, 0, 0, .2);
 }
 
 #maze div.cross.anti:after {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg) translateX(4.30vw) translateY(-5vw);
-    -moz-transform: rotate(-45deg) translateX(4.25vw) translateY(1vw);
-    -ms-transform: rotate(-45deg) translateX(4.25vw) translateY(1vw);
-    -o-transform: rotate(-45deg) translateX(4.25vw) translateY(1vw);
+    transform: rotate(-45deg) translateX(-35%) translateY(-560%);
+    -webkit-transform: rotate(-45deg) translateX(-35%) translateY(-560%);
+    -moz-transform: rotate(-45deg) translateX(-35%) translateY(-560%);
+    -ms-transform: rotate(-45deg) translateX(-35%) translateY(-560%);
+    -o-transform: rotate(-45deg) translateX(-35%) translateY(-560%);
+    box-shadow: -2px -2px 2px 2px rgba(0, 0, 0, .4);
 }
