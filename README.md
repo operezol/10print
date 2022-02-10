@@ -1,2 +1,3 @@
 # 10print
-one-line Commodore 64 BASIC program
+Originally was a one-line Commodore 64 BASIC program. 
+Now is a javascript divertimento.
